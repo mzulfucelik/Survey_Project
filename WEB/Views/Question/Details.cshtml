@@ -1,0 +1,31 @@
+﻿@using Core.DTOs
+
+@{
+    ViewData["Title"] = "Details";
+}
+@model QuestionDto
+
+<div class="col-lg-12">
+    <div class="card">
+        <div class="card-body">
+            <form asp-controller="Question" asp-action="Update" method="post" class="needs-validation" novalidate>
+                <h4 class="card-title">Soru</h4>
+                <input type="hidden" asp-for="QuestionId">
+
+
+                <div class="mb-3 row">
+                    <label asp-for="Content" class="col-md-2 col-form-label">Soru</label>
+                    <div class="col-md-6">
+                        <input id="ProductBrandsNameDetails" asp-for="Content" type="text" class="form-control" >
+
+                    </div>
+
+               
+ 
+            </form>
+
+
+        </div>
+    </div>
+</div>
+
